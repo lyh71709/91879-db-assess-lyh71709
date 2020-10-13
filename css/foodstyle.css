@@ -1,0 +1,187 @@
+body {
+    margin: auto;
+    padding: 50px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ---- Set up site grid ---- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "banner banner"
+        "nav nav"
+        "side main"
+        "footer footer";
+        grid-gap: 4px;
+    
+}
+
+/* ---- End of grid setup ---- */
+
+
+/* -000- Area styling -000- */
+
+.box {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Area colouring... */
+
+/* logo, banner and footer background are the same */
+.logo, .banner, .footer {
+    background-color: #A2D729;  /* Lime */
+}
+
+/* Set font on dark areas to white */
+.logo, .banner, .side, .footer {
+    color: #fff; /* white */
+}
+
+/* Area specifics */
+
+.logo {
+    padding: 0;
+    float: left;
+    
+}
+
+.banner {
+    grid-area: banner;
+    border: solid 2px #342E37; /* Black Coffe */
+}
+
+.side {
+    grid-area: side;
+    background-color: #342E37; /* Black Coffee */
+}
+
+.main {
+    grid-area: main;
+    background-color: #f9f9f9;  /* Baby Powder */
+    border: solid 1px #D9D9D9; /* Light Gray */
+    color: #000; /* white */
+}
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+}
+
+/* -000- End of area styling -000- */
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Side Links */
+a.side{font-weight:bold;}
+a.side:link, a.side:visited {color:#fff;} /* white */
+a.side:hover {color: #cecfd5; text-decoration: none;} /* pale grey */
+
+
+/* links in page */
+a {font-weight: bold; text-decoration: none;}
+a:link{color: #AA0000;} /*dark_red */
+a:visited{color: #111177;} /* dark blue */
+a:hover{color: #000;}    /* Black*/
+
+
+/* Contact Form Styling */
+.contact {
+    width: 100%;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 85%;
+    height: auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    background-color: #fff; /* white */
+}
+
+.center_image {
+    text-align: center;
+}
+
+/* Sub Heading Formatting */
+.sub_heading {
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    color: #000; /* black */
+}
+
+/* Results Box Formatting */
+.results{
+    background-color: #C8FF8E; /* Milky Green */
+    border-radius: 10px;
+    border: 1px solid #000; /* White */
+    padding: 5px;
+    color: #000; /* White */
+}
+
+.checked {
+    color: orange; /* Orange */
+}
+
+/* Error Box formatting */
+.error{
+    background-color: #ffe0ed; /*pale pink*/
+    border: 2px solid #8a1737; /* dark red border */
+    color: #8a1737; /* dark red */
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* form formatting */
+form {
+    width: 250px;
+    margin: 5px;
+}
+
+.search {
+    width: 160px;
+    padding: 8px 15px;
+    background: #fff;
+}
+
+.submit {
+    font-family: FontAwesome;
+    position: relative;
+    width:45px;
+    left: -1px;
+    background-color: #636363;
+    color: #d6d6d6;
+    border: 1px solid #636263;
+    border-radius: 0 5px 5px 0;
+}
+
+input {
+    height: 40px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.half_width {
+    width: 80px;
+}
+
+select {
+    outline: 0;
+    height: 40px;
+    border: 1px solid #ccc;
+    color: #878787;
+    width: 200px;
+}
+
+.food_photo {
+    float: right;
+}
