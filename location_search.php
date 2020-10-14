@@ -51,6 +51,11 @@ $count=mysqli_num_rows($find_query);
                         
                     <!-- Results go here -->
                     <div class="results">
+                        
+                        <!-- image -->
+                        <div>
+                            <img class="food_photo" src="<?php echo $find_rs['Image']; ?>" />
+                        </div>
                 
                         <p>Item: <span class="sub_heading"><?php echo $find_rs['Item']; ?></span></p>
 

@@ -44,8 +44,8 @@ $count=mysqli_num_rows($showall_query);
                         
                               
                         <!-- image -->
-                        <div class="food_photo">
-                            <img src="<?php echo $showall_rs['Image']; ?>" />
+                        <div>
+                            <img class="food_photo" src="<?php echo $showall_rs['Image']; ?>" />
                         </div>
                 
                         <p>Item: <span class="sub_heading"><?php echo $showall_rs['Item']; ?></span></p>

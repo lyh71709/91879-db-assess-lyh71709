@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+!DOCTYPE HTML>
 
 <html lang="en">
     
@@ -62,8 +62,6 @@
         <div class="box side">
             <h2>Search  |   <a class="side" href="showall.php">Show All</a></h2>
             
-            <i>Search for your Item, Meal Type or Location here</i>
-            
             <hr />
             
             <!-- Start of Item Search -->
@@ -77,6 +75,8 @@
             </form>
 
             <!-- End of Item Search -->
+            
+            <hr />
             
             <!-- Start of Meal Type Search -->
         
@@ -114,6 +114,8 @@
         
             <!-- End of meal type Search -->
             
+            <hr />
+            
             <!-- Start of location Search -->
         
             <form method="post" action="location_search.php" enctype="multipart/form-data">
@@ -125,7 +127,9 @@
             </form>
 
             <!-- End of location Search -->
+            
             <hr />
+            
             <!-- Start of ratings form -->
         
             <form method="post" action="rating_search.php" enctype="multipart/form-data">
@@ -150,6 +154,8 @@
             </form>
         
             <!-- end of ratings form -->
+            
+            <hr />
             
             <!-- Start of vegetarian Search -->
 
@@ -186,5 +192,7 @@
             </form>
 
             <!-- End of vegetarian Search -->
+            
+            <hr />
             
         </div> <!-- / side bar -->
